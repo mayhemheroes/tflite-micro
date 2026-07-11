@@ -1,0 +1,9 @@
+project: tflite-micro
+target: tflite-flatbuffer-align
+cmds:
+  - cmd: /mayhem/tflite-flatbuffer-align
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tflite-flatbuffer-align/testsuite
